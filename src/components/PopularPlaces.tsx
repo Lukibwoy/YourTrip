@@ -20,21 +20,22 @@ const PopularPlaces: React.FC = () => {
 					<img src={beach1} alt="beach" className="rounded-xl" />
 					<div className="flex justify-between flex-row mt-2">
 						<p className="PlaceTitle font-semibold">Filippo Beach</p>
-						<p className="rating">5*</p>
+						<p className="rating">4.5&#9734;</p>
 					</div>
 				</div>
 				<div className="Place flex flex-col md:w-1/3 lg:w-1/4 xl:w-1/3 mt-5 md:mt-0 md:mr-10">
 					<img src={beach2} alt="beach" className="rounded-xl" />
 					<div className="flex justify-between flex-row mt-2">
 						<p className="PlaceTitle font-semibold">Baia do Sancho</p>
-						<p className="rating">5*</p>
+						<p className="rating">4&#9734;</p>
+
 					</div>
 				</div>
 				<div className="Place flex flex-col md:w-1/3 lg:w-1/4 xl:w-1/3 mt-5 md:mt-0">
 					<img src={beach3} alt="beach" className="rounded-xl" />
 					<div className="flex justify-between flex-row mt-2">
-						<p className="PlaceTitle font-semibold">Filippo Beach</p>
-						<p className="rating">5*</p>
+						<p className="PlaceTitle font-semibold">Maledives</p>
+						<p className="rating">5&#9734;</p>
 					</div>
 				</div>
 			</div>
