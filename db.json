@@ -1,0 +1,12 @@
+{
+	"cards": [
+		{
+			"id": 0,
+			"start": "Rzeszów",
+			"destination": "Wrocław",
+			"activities": "Guided city tour, try local cuisine, visit a museum.",
+			"distance": "400km",
+			"budget": "500 PLN"
+		}
+	]
+}
