@@ -2,15 +2,14 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Header from './components/Header'
 import PopularPlaces from './components/PopularPlaces'
-import GoogleSearch from './components/GoogleSearch'
-
+import Planner from './Planner'
 function App() {
 	return (
 		<div className="bg-white ">
 			<Navbar />
 			<Header />
 			<PopularPlaces />
-			<GoogleSearch />
+			<Planner />
 		</div>
 	)
 }
