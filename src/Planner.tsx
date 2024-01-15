@@ -34,7 +34,7 @@ const Planner: React.FC = () => {
 	const sumOfDistance = (x: Card[]) => {
 		let sum = 0
 		for (let i = 0; i < x.length; i++) {
-			sum += parseFloat(x[i].distance) // Dodaj parseFloat, aby uniknąć problemów z konwersją na liczbę
+			sum += parseFloat(x[i].distance)
 		}
 		return sum
 	}
