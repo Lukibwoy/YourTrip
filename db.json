@@ -28,12 +28,12 @@
       "day": 3
     },
     {
-      "id": "b13d",
+      "id": "edd8",
       "start": "Berlin",
       "destination": "Munich",
-      "activities": "x",
-      "distance": "500",
-      "budget": "22",
+      "activities": "xyz",
+      "distance": 200,
+      "budget": 500,
       "day": 4
     }
   ]
