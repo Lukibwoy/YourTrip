@@ -35,6 +35,15 @@
       "distance": 200,
       "budget": 500,
       "day": 4
+    },
+    {
+      "id": "b64e",
+      "start": "Munich",
+      "destination": "Amsterdam",
+      "activities": "xyz",
+      "distance": 400,
+      "budget": 500,
+      "day": 5
     }
   ]
 }
