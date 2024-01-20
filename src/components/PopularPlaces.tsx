@@ -5,7 +5,7 @@ import beach3 from './images/beach3.jpg'
 
 const PopularPlaces: React.FC = () => {
 	return (
-		<div className="container w-screen mx-auto flex items-center justify-center flex-col mt-20">
+		<div className="w-3/4 mx-auto flex items-center justify-around flex-col mt-20">
 			<div className="PlacesTypes flex flex-col md:flex-row justify-between w-full">
 				<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Popular Place</h2>
 				<div className="mt-3 mb-5 md:mb-0 font-semibold text-lg">
