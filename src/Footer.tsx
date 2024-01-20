@@ -1,38 +1,41 @@
-import React from 'react'
-// import { BsGithub } from 'react-icons/bs'
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
-const Footer: React.FC = () => {
+const Footer = () => {
 	return (
-		<footer className="bg-green-400 mt-80 text-white">
-			<div className="md:flex md:justify-between md:items-center sm:px-12 px-4 bg-[#ffffff19] py-7">
-				<h1
-					className="lg:text-4xl text-3xl md:mb-0 mb-6 lg:leading-normal font-semibold
-                 md:w-2/5">
-					<span className="text-teal-400">Free</span> until you're ready to launch
-				</h1>
-				<div>
-					<input
-						type="text"
-						placeholder="Enter Your ph.no"
-						className="text-gray-800
-                   sm:w-72 w-full sm:mr-5 mr-1 lg:mb-0 mb-4 py-2.5 rounded px-2 focus:outline-none"
-					/>
-					<button
-						className="bg-teal-400 hover:bg-teal-500 duration-300 px-5 py-2.5 font-[Poppins]
-                   rounded-md text-white md:w-auto w-full">
-						Request Code
-					</button>
-				</div>
-			</div>
-
-			<div
-				className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10
-              text-center pt-2 text-gray-400 text-sm pb-8">
-				<span>© 2020 Appy. All rights reserved.</span>
-				<span>Terms · Privacy Policy</span>
-			</div>
-		</footer>
-	)   
+		<div className="text-white font-quicksand px-4 bg-green-800 pb-8 border-t-[1px] mt-5">
+			<h3 className=" text-3xl text-center font-bold sm:text-4xl mt-8">YourTrip</h3>
+			<ul className="grid grid-cols-2 mx-auto  place-items-center  gap-8  mt-8 sm:max-w-[950px] sm:grid-cols-4 sm:gap-2 ">
+				<li className="font-[100] underline underline-offset-4 cursor-pointer " tabIndex={0}>
+					Our Company
+				</li>
+				<li className="font-[100] underline underline-offset-4  cursor-pointer" tabIndex={0}>
+					Terms & Conditions
+				</li>
+				<li className="font-[100] underline underline-offset-4  cursor-pointer" tabIndex={0}>
+					Contact
+				</li>
+				<li className="font-[100] underline underline-offset-4  cursor-pointer" tabIndex={0}>
+					Privacy Policy
+				</li>
+			</ul>
+			<section className="mx-auto">
+				<p className="text-center mt-8 text-[0.7rem] font-[500]">App created by: Łukasz Wilczyński</p>
+				<ul className="flex gap-4 justify-center mt-2 text-[0.7rem] items-center">
+					<li>E-mail: lukaszwiczynski@gmail.com</li>
+					<li>
+						<a href="https://github.com/Lukibwoy" target="_blank" rel="noreferrer">
+							<AiFillGithub size={25} />
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+							<AiFillLinkedin size={25} />
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	)
 }
 
 export default Footer
