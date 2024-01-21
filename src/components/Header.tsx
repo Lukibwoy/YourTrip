@@ -10,12 +10,14 @@ const Header: React.FC = () => {
 					<h1 className="text-4xl md:text-8xl font-semibold">
 						Plan <br /> Your Next Trip
 					</h1>
-					<p className="text-sm md:text-xl mt-10">Discover the world, one journey at a time. Travel far and wide, for adventure awaits at every turn.</p>
+					<p className="text-sm md:text-xl mt-5 md:mt-10">
+						Discover the world, one journey at a time. Travel far and wide, for adventure awaits at every turn.
+					</p>
 				</div>
 
 				<div className="mt-4 md:mt-0 ml-0 w-4/5 md:w-2/3 flex flex-row">
-					<img src={flight} alt="Travel Image" className="rounded-full w-5/6 h-5/6 object-cover" />
-					<img src={tourist} alt="Travel Image" className="rounded-full w-5/6 h-5/6 object-cover" />
+					<img src={flight} alt="Travel Image" className=" w-full h-5/6 object-cover" />
+					<img src={tourist} alt="Travel Image" className=" w-5/6 h-5/6 object-cover" />
 				</div>
 			</div>
 		</header>
@@ -23,4 +25,3 @@ const Header: React.FC = () => {
 }
 
 export default Header
- 
