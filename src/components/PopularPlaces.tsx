@@ -5,17 +5,17 @@ import beach3 from './images/beach3.jpg'
 
 const PopularPlaces: React.FC = () => {
 	return (
-		<div className="w-3/4 mx-auto flex items-center justify-around flex-col mt-20">
+		<div className="w-3/4 mx-auto flex items-center justify-around flex-col mt-3 md:mt-20">
 			<div className="PlacesTypes flex flex-col md:flex-row justify-between w-full">
 				<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Popular Place</h2>
-				<div className="mt-3 mb-5 md:mb-0 font-semibold text-lg">
+				<div className="hidden mt-3 mb-5 md:mb-0 font-semibold text-lg md:flex flex-wrap items-center justify-center">
 					<button className="px-8">Beach</button>
 					<button className="px-8">Mountain</button>
 					<button className="px-8">Waterfall</button>
 					<button className="px-8">Icebergs</button>
 				</div>
 			</div>
-			<div className="PlacesOffer flex flex-col md:flex-row w-full md:w-4/4  md:mt-5">
+			<div className="PlacesOffer flex flex-col md:flex-row w-full md:w-4/4 mt-5">
 				<div className="Place flex flex-col md:w-1/3 lg:w-1/4 xl:w-1/3 md:mr-10">
 					<img src={beach1} alt="beach" className="rounded-xl" />
 					<div className="flex justify-between flex-row mt-2">

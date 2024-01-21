@@ -94,7 +94,7 @@ const Planner: React.FC = () => {
 	}
 
 	return (
-		<div className=" w-5/6 h-150% mx-auto flex items-center justify-between flex-col mt-20">
+		<div className=" w-5/6 h-150% mx-auto flex items-center justify-between flex-col mt-8 md:mt-20">
 			<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Trip Planner</h2>
 			<p className="text-2xl text-black text-center mt-10">
 				This is a place where you can plan your dream trip. All you need is a good plan!
