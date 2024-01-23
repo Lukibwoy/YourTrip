@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import { useState, ChangeEvent, FormEvent } from 'react'
 
 function Newsletter() {
 	const [email, setEmail] = useState<string>('')
