@@ -1,4 +1,4 @@
-![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/a4926c0c-d3a5-4fdb-ab2d-a72a60732bd6)# YourTrip
+![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/cf63f8e2-7d59-48a0-8652-63e56b1ab058)![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/a4926c0c-d3a5-4fdb-ab2d-a72a60732bd6)# YourTrip
 
 YourTrip is a web application for planing your trip. It helps you organize any travel and predict cost for any day.
 
@@ -35,3 +35,5 @@ YourTrip is a web application for planing your trip. It helps you organize any t
 
 ## Screenshots
 ![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/9b677c54-82de-4227-ab0b-03c3700dbaf5)
+![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/6572a8d0-fd36-42ef-8929-2a2f1dc3e23c)
+![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/c4848703-e198-4f31-92e4-4aa219ba0199)
