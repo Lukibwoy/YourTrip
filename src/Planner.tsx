@@ -9,6 +9,7 @@ interface Card {
 	activities: string
 	distance: string
 	budget: string
+	cites: string
 }
 
 const Planner: React.FC = () => {
@@ -60,7 +61,7 @@ const Planner: React.FC = () => {
 	}
 
 	const totalCities = (x: Card[]) => {
-		let cities = []
+		let cities: string[] = []
 
 		for (let i = 0; i < x.length; i++) {
 			if (!cities.includes(x[i].destination)) {
@@ -94,7 +95,7 @@ const Planner: React.FC = () => {
 	}
 
 	return (
-		<div className=" w-5/6 h-150% mx-auto flex items-center justify-between flex-col mt-8 md:mt-20">
+		<div className=" w-5/6 h-150% mx-auto flex items-center justify-between flex-col mt-4 md:mt-20">
 			<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Trip Planner</h2>
 			<p className="text-2xl text-black text-center mt-10">
 				This is a place where you can plan your dream trip. All you need is a good plan!
@@ -102,7 +103,7 @@ const Planner: React.FC = () => {
 			<p className="text-xl text-black text-center mt-3">
 				Below this text, you can add whatever you need and plan each day as you want.
 			</p>
-			<div className="w-full h-50% mx-auto flex-col flex items-center justify-center mt-20 md:flex-row">
+			<div className="w-full h-50% mx-auto flex-col flex items-center justify-center mt-10 md:mt-20 md:flex-row">
 				<AddDay onAddDay={handleAddDay} />
 				<div className="ml-0 md:ml-40 w-full md:w-1/2 h-full flex flex-col mt-10 bg-green-400 rounded-2xl shadow-2xl">
 					<h3 className="text-2xl font-semibold text-black text-center mb-3">Trip Summary</h3>
