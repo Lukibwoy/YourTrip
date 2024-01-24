@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { Formik, Field, Form, ErrorMessage } from 'formik'
+import { Formik, Field, Form, ErrorMessage, FormikHelpers } from 'formik'
 
 interface AddDayProps {
 	onAddDay: (newDay: any) => void
@@ -10,16 +10,16 @@ interface FormValues {
 	start: string
 	destination: string
 	activities: string
-	distance: number
-	budget: number
+	distance: string
+	budget: string
 }
 
 const initialValues: FormValues = {
 	start: '',
 	destination: '',
 	activities: '',
-	distance: 0,
-	budget: 0,
+	distance: '',
+	budget: '',
 }
 
 const validate = (values: FormValues) => {
@@ -42,14 +42,14 @@ const validate = (values: FormValues) => {
 	}
 
 	if (!values.distance) {
-		errors.distance == 'Required'
-	} else if (values.distance < 0) {
+		errors.distance = 'Required'
+	} else if (Number(values.distance) < 0) {
 		errors.distance = 'The value must be greater than 0'
 	}
 
 	if (!values.budget) {
 		errors.budget = 'Required'
-	} else if (values.budget < 0) {
+	} else if (Number(values.budget) < 0) {
 		errors.budget = 'The value must be greater than 0'
 	}
 
@@ -57,7 +57,7 @@ const validate = (values: FormValues) => {
 }
 
 const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
-	const handleAddDay = async (values, { resetForm }) => {
+	const handleAddDay = async (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
 		try {
 			const existingDays = await axios.get('http://localhost:3020/cards')
 			const lastDay = existingDays.data[existingDays.data.length - 1]
@@ -72,10 +72,9 @@ const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 			console.error('Error adding day:', error)
 		}
 	}
-
 	return (
 		<div className="add-day-form w-full	md:w-1/4 h-full bg-green-300 rounded-2xl shadow-2xl">
-			<h3 className="text-2xl font-semibold text-black text-center mb-3">Next Day</h3>
+			<h3 className="text-2xl font-semibold text-black text-center mb-3">Add Day</h3>
 			<Formik initialValues={initialValues} validate={validate} onSubmit={handleAddDay}>
 				<Form className="flex flex-col items-center">
 					<Field
@@ -121,7 +120,7 @@ const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 					<button
 						type="submit"
 						className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-50 mb-5 mt-3">
-						Add Day
+						Add
 					</button>
 				</Form>
 			</Formik>
