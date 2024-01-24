@@ -1,58 +1,31 @@
 {
-  "cards": [
-    {
-      "id": "9246",
-      "start": "Rzeszów",
-      "destination": "Kraków",
-      "activities": "xyz",
-      "distance": "200",
-      "budget": "500",
-      "day": 1
-    },
-    {
-      "id": "6780",
-      "start": "Kraków",
-      "destination": "Wrocław ",
-      "activities": "xxx",
-      "distance": "250",
-      "budget": "250",
-      "day": 2
-    },
-    {
-      "id": "f761",
-      "start": "Wrocław",
-      "destination": "Berlin",
-      "activities": "xyz",
-      "distance": "400",
-      "budget": "700",
-      "day": 3
-    },
-    {
-      "id": "edd8",
-      "start": "Berlin",
-      "destination": "Munich",
-      "activities": "xyz",
-      "distance": 200,
-      "budget": 500,
-      "day": 4
-    },
-    {
-      "id": "b64e",
-      "start": "Munich",
-      "destination": "Amsterdam",
-      "activities": "xyz",
-      "distance": 400,
-      "budget": 500,
-      "day": 5
-    },
-    {
-      "id": "4e82",
-      "start": "Amsterdam",
-      "destination": "Tenerife",
-      "activities": "xyz",
-      "distance": 200,
-      "budget": 500,
-      "day": 6
-    }
-  ]
+	"cards": [
+		{
+			"id": "9246",
+			"start": "Rzeszów",
+			"destination": "Kraków",
+			"activities": "Exploring historical landmarks and enjoying local cuisine",
+			"distance": "200",
+			"budget": "500",
+			"day": 1
+		},
+		{
+			"id": "6780",
+			"start": "Kraków",
+			"destination": "Wrocław",
+			"activities": "Immersing in vibrant cultural experiences and discovering hidden gems",
+			"distance": "250",
+			"budget": "250",
+			"day": 2
+		},
+		{
+			"id": "f761",
+			"start": "Wrocław",
+			"destination": "Berlin",
+			"activities": "Exploring the eclectic art scene and savoring the diverse culinary delights",
+			"distance": "400",
+			"budget": "700",
+			"day": 3
+		}
+	]
 }
