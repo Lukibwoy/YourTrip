@@ -17,7 +17,7 @@ const Planner: React.FC = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:3020/cards')
+			.get('https://db-trip.vercel.app/cards')
 			.then((res: AxiosResponse<Card[]>) => {
 				console.log(res)
 				setCards(res.data)
@@ -34,7 +34,7 @@ const Planner: React.FC = () => {
 
 	const refreshCard = () => {
 		axios
-			.get('http://localhost:3020/cards')
+			.get('https://db-trip.vercel.app/cards')
 			.then(res => {
 				console.log(res)
 				setCards(res.data)
@@ -84,7 +84,7 @@ const Planner: React.FC = () => {
 
 	const deleteDay = (cardId: number) => {
 		axios
-			.delete(`http://localhost:3020/cards/${cardId}`)
+			.delete(`https://db-trip.vercel.app/cards/${cardId}`)
 			.then(response => {
 				console.log('Posiłek usunięty:', response)
 				refreshCard()

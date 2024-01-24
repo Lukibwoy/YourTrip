@@ -29,7 +29,7 @@ const validate = (values: FormValues) => {
 		errors.start = 'Required'
 	} else if (values.start.length < 3) {
 		errors.start = 'Start must be at least 3 characters long'
-	}
+	}git 
 	if (!values.destination) {
 		errors.destination = 'Required'
 	} else if (values.destination.length < 3) {
@@ -59,12 +59,12 @@ const validate = (values: FormValues) => {
 const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 	const handleAddDay = async (values: FormValues, { resetForm }: FormikHelpers<FormValues>) => {
 		try {
-			const existingDays = await axios.get('http://localhost:3020/cards')
+			const existingDays = await axios.get('https://db-trip.vercel.app/cards')
 			const lastDay = existingDays.data[existingDays.data.length - 1]
 
 			const newDayNumber = lastDay ? lastDay.day + 1 : 1
 
-			const response = await axios.post('http://localhost:3020/cards', { ...values, day: newDayNumber })
+			const response = await axios.post('https://db-trip.vercel.app/cards', { ...values, day: newDayNumber })
 			onAddDay(response.data)
 
 			resetForm()
