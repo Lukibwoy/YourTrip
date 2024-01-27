@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 			<div className="hidden md:flex items-center justify-between">
 				<Logo />
 
-				<div className="space-x-40 text-2xl mr-20 font-semibold">
+				<div className="md:space-x-20 xxl:space-x-40 text-2xl mr-20 font-semibold">
 					<a href="#" className="text-black">
 						Home
 					</a>
@@ -71,9 +71,9 @@ const Navbar: React.FC = () => {
 								transition={{ duration: 0.3, ease: 'easeInOut' }}>
 								✕
 							</motion.button>
-							{/* Add spacing or additional elements if needed */}
+						
 						</div>
-						<div className="space-y-16 font-semibold h-full flex flex-col items-center text-xl pb-20">
+						<div className="space-y-20 font-semibold h-full flex flex-col items-center text-xl pb-36">
 							<a href="#" className="block text-black" onClick={closeMobileMenu}>
 								HOME
 							</a>

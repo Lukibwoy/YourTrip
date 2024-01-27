@@ -5,7 +5,7 @@ import beach3 from './images/beach3.jpg'
 
 const PopularPlaces: React.FC = () => {
 	return (
-		<div className="w-3/4 mx-auto flex items-center justify-around flex-col mt-3 md:mt-20">
+		<div className="w-screen mx-auto px-5 md:px-20 flex items-center justify-around flex-col mt-3 md:mt-10">
 			<div className="PlacesTypes flex flex-col md:flex-row justify-between w-full">
 				<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Popular Place</h2>
 				<div className="hidden mt-3 mb-5 md:mb-0 font-semibold text-lg md:flex flex-wrap items-center justify-center">
@@ -28,7 +28,6 @@ const PopularPlaces: React.FC = () => {
 					<div className="flex justify-between flex-row mt-2">
 						<p className="PlaceTitle font-semibold">Baia do Sancho</p>
 						<p className="rating">4&#9734;</p>
-
 					</div>
 				</div>
 				<div className="Place flex flex-col md:w-1/3 lg:w-1/4 xl:w-1/3 mt-5 md:mt-0">
