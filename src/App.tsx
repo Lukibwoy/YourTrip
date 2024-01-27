@@ -7,7 +7,7 @@ import Footer from './Footer'
 import Newsletter from './Newsletter'
 function App() {
 	return (
-		<div className="bg-white">
+		<div className="bg-white overflow-hidden">
 			<Navbar />
 			<Header />
 			<PopularPlaces />

@@ -29,7 +29,7 @@ const validate = (values: FormValues) => {
 		errors.start = 'Required'
 	} else if (values.start.length < 3) {
 		errors.start = 'Start must be at least 3 characters long'
-	}git 
+	}
 	if (!values.destination) {
 		errors.destination = 'Required'
 	} else if (values.destination.length < 3) {
