@@ -74,7 +74,7 @@ const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 	}
 	return (
 		<div className="add-day-form w-full	md:w-1/4 h-full bg-green-300 rounded-2xl shadow-2xl">
-			<h3 className="text-2xl font-semibold text-black text-center mb-3">Add Day</h3>
+			<h3 className="text-2xl font-semibold text-black text-center mt-2 mb-3">Add Day</h3>
 			<Formik initialValues={initialValues} validate={validate} onSubmit={handleAddDay}>
 				<Form className="flex flex-col items-center">
 					<Field
@@ -119,7 +119,7 @@ const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 
 					<button
 						type="submit"
-						className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-50 mb-5 mt-3">
+						className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-50 mb-3 mt-3">
 						Add
 					</button>
 				</Form>

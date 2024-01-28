@@ -103,23 +103,23 @@ const Planner: React.FC = () => {
 			<p className="text-md md:text-xl text-black text-center mt-3">
 				Below you can add whatever you need and plan each day as you want.
 			</p>
-			<div className="flex w-full md:px-20 flex-col mx-auto items-stretch justify-between mt-10 md:mt-20 md:flex-row">
+			<div className="flex w-full md:px-20 flex-col mx-auto items-stretch  justify-between mt-10 md:mt-20 md:flex-row">
 				<AddDay onAddDay={handleAddDay} />
-				<div className="flex flex-col w-full md:w-2/3 mt-8 bg-green-400 rounded-2xl shadow-2xl h-full">
-					<h3 className="text-2xl font-semibold text-black text-center mb-3">Trip Summary</h3>
-					<p className="text-lg font-semibold text-black mt-7 ml-3">
+				<div className="flex flex-col w-full md:w-2/3 mt-5 md:mt-0 bg-green-400 rounded-2xl shadow-2xl h-full">
+					<h3 className="text-2xl font-semibold text-black text-center mt-2 mb-3">Trip Summary</h3>
+					<p className="text-lg font-semibold text-black mt-3 ml-3">
 						Total Distance: <span className="text-white">{`${sumOfDistance(cards)} km`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3">
 						Sum of Expenses: <span className="text-white">{`${totalExpenses(cards)} PLN`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3">
 						All cities: <span className="text-white">{`${totalCities(cards)}`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 ml-3	">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3	">
 						Days of trip: <span className="text-white">{`${sumOfDays(cards)}`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 mb-5 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mb-6 ml-3">
 						Average expense per day: <span className="text-white">{`${averageExpenses(cards)} PLN`}</span>
 					</p>
 				</div>
@@ -129,7 +129,7 @@ const Planner: React.FC = () => {
 				{cards.map(card => (
 					<div
 						key={card.id}
-						className="card flex justify-between flex-col w-full md:w-1/4 h-5/6 bg-green-500 rounded-2xl shadow-2xl m-0 md:m-4 mb-4">
+						className="card flex justify-between flex-col w-full md:w-1/4 h-5/6 bg-green-500 rounded-2xl shadow-2xl m-0  mb-4">
 						<h3 className="text-2xl font-semibold text-black text-center mt-2">Day {card.day}</h3>
 						<div className="ml-3 mt-2 md:mt-5 md:ml-5">
 							<p className="text-lg font-semibold text-black mt-5 md:mt-7">
