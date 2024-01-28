@@ -19,7 +19,7 @@ const Header: React.FC = () => {
 					<img
 						src={flight}
 						alt="Travel Image"
-						className="ml-6 md:ml-20 xxl:ml-60 w-full md:w-2/3 h-full object-cover"
+						className="ml-6 md:ml-0 xxl:w-2/3 xxl:ml-40 w-full md:w-3/5 h-full object-cover"
 					/>
 					<img src={tourist} alt="Travel Image" className="w- md:w-1/2 md:h-1/2 object-cover" />
 				</div>
