@@ -6,7 +6,7 @@ const Header: React.FC = () => {
 	return (
 		<header className="container w-screen h-1/5 md:h-1/2 flex justify-center items-center mt-10 md:mt-0 text-black">
 			<div className=" mx-auto flex flex-col md:flex-row items-center justify-center md:mt-10  xl:mt-40">
-				<div className="w-full p-5 md:w-2/5 xxl:w-1/3 ml-5 md:ml-16">
+				<div className="w-full p-5 md:w-1/2 xxl:w-1/3 ml-5 md:ml-16">
 					<h1 className="text-4xl md:text-6xl xxl:text-8xl font-semibold">
 						Plan <br /> Your Next Trip
 					</h1>
@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 						alt="Travel Image"
 						className="ml-6 md:ml-0 xxl:w-2/3 xxl:ml-40 w-full md:w-3/5 h-full object-cover"
 					/>
-					<img src={tourist} alt="Travel Image" className="w- md:w-1/2 md:h-1/2 object-cover" />
+					<img src={tourist} alt="Travel Image" className="w-full md:w-2/3 lg:w-1/2 md:h-1/2 object-cover" />
 				</div>
 			</div>
 		</header>
