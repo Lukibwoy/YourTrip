@@ -30,7 +30,7 @@ YourTrip is a web application for planing your trip. It helps you organize any t
 - npm start
 
 ## Live
-- UZUEPEŁNIĆ
+- (https://yourstrip.netlify.app/)
 - Attention: Fully functional after cloning the repository and using db.json as a server.
 
 ## Screenshots
