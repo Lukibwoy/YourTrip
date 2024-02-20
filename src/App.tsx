@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import PopularPlaces from './components/PopularPlaces'
 import Planner from './Planner'
+import Pricing from './components/Pricing'
 import Footer from './Footer'
 import Newsletter from './Newsletter'
 function App() {
@@ -12,6 +13,7 @@ function App() {
 			<Header />
 			<PopularPlaces />
 			<Planner />
+			<Pricing />
 			<Newsletter />
 			<Footer />
 		</div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect} from 'react'
 import axios, { AxiosResponse } from 'axios'
 import AddDay from './components/AddDay'
 interface Card {
@@ -95,7 +95,7 @@ const Planner: React.FC = () => {
 	}
 
 	return (
-		<div className=" w-screen p-5 md:p-0 h-150% mx-auto flex items-center justify-between flex-col mt-4 md:mt-20">
+		<div id='planner' className=" w-screen p-5 md:p-0 h-150% mx-auto flex items-center justify-between flex-col mt-4 md:mt-20">
 			<h2 className="text-3xl font-semibold text-black text-center md:text-4xl">Trip Planner</h2>
 			<p className=" text-xl md:text-2xl text-black text-center mt-10">
 				This is a place where you can plan your dream trip. All you need is a good plan!
