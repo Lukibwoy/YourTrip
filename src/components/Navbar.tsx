@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-scroll'
 import { motion, AnimatePresence } from 'framer-motion'
 import Logo from './Logo'
 
@@ -14,31 +15,31 @@ const Navbar: React.FC = () => {
 	}
 
 	return (
-		<nav className="md:p-0 p-2 relative">
+		<nav id="home" className="md:p-0 p-2 relative">
 			{/* Desktop Navigation */}
 			<div className="hidden md:flex items-center justify-between">
 				<Logo />
 
 				<div className="md:space-x-5 lg:space-x-20 xxl:space-x-40 text-2xl mr-20 font-semibold">
-					<a href="#" className="text-black">
+					<Link to="home" smooth={true} duration={500} className="text-black cursor-pointer">
 						Home
-					</a>
-					<a href="#" className="text-black">
+					</Link>
+					<Link to="planner" smooth={true} duration={500} className="text-black cursor-pointer">
 						Planner
-					</a>
-					<a href="#" className="text-black">
+					</Link>
+					<Link to="pricing" smooth={true} duration={500} className="text-black cursor-pointer">
 						Pricing
-					</a>
-					<a href="#" className="text-black ">
+					</Link>
+					<Link to="contact" smooth={true} duration={500} className="text-black cursor-pointer">
 						Contact
-					</a>
+					</Link>
 					<button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
 						Sign Up
 					</button>
 				</div>
 			</div>
 
-			{/* Mobile Navigation */}	
+			{/* Mobile Navigation */}
 			<div className="md:hidden flex items-center justify-between">
 				<Logo />
 				<motion.button
@@ -71,21 +72,40 @@ const Navbar: React.FC = () => {
 								transition={{ duration: 0.3, ease: 'easeInOut' }}>
 								✕
 							</motion.button>
-						
 						</div>
 						<div className="space-y-20 font-semibold h-full flex flex-col items-center text-xl pb-36">
-							<a href="#" className="block text-black" onClick={closeMobileMenu}>
+							<Link
+								to="home"
+								smooth={true}
+								duration={500}
+								className="block text-black cursor-pointer"
+								onClick={closeMobileMenu}>
 								HOME
-							</a>
-							<motion.a href="#" className="block text-black" onClick={closeMobileMenu}>
+							</Link>
+							<Link
+								to="planner"
+								smooth={true}
+								duration={500}
+								className="block text-black cursor-pointer"
+								onClick={closeMobileMenu}>
 								PLANNER
-							</motion.a>
-							<motion.a href="#" className="block text-black" onClick={closeMobileMenu}>
+							</Link>
+							<Link
+								to="pricing"
+								smooth={true}
+								duration={500}
+								className="block text-black cursor-pointer"
+								onClick={closeMobileMenu}>
 								PRICING
-							</motion.a>
-							<a href="#" className="block text-black" onClick={closeMobileMenu}>
+							</Link>
+							<Link
+								to="contact"
+								smooth={true}
+								duration={500}
+								className="block text-black cursor-pointer"
+								onClick={closeMobileMenu}>
 								CONTACT
-							</a>
+							</Link>
 						</div>
 					</motion.div>
 				)}
