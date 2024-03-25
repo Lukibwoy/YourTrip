@@ -18,7 +18,7 @@ const PopularPlaces: React.FC = () => {
 			<div className="PlacesOffer flex flex-col md:flex-row justify-between w-full md:w-4/4 mt-5">
 				<div className="Place flex flex-col md:w-full  xl:w-1/3 md:mr-10">
 					<img src={beach1} alt="beach" className="rounded-xl" />
-					<div className="flex justify-between flex-row mt-2">	
+					<div className="flex justify-between flex-row mt-2">
 						<p className="PlaceTitle font-semibold">Filippo Beach</p>
 						<p className="rating">4.5&#9734;</p>
 					</div>
