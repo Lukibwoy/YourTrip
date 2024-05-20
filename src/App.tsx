@@ -1,23 +1,24 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Header from './components/Header'
-import PopularPlaces from './components/PopularPlaces'
-import Planner from './Planner'
-import Pricing from './components/Pricing'
-import Footer from './Footer'
-import Newsletter from './Newsletter'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import './App.css';
+
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import SignUpForm from './components/SignUpForm';
+
 function App() {
-	return (
-		<div className="bg-white overflow-hidden">
-			<Navbar />
-			<Header />
-			<PopularPlaces />
-			<Planner />
-			<Pricing />
-			<Newsletter />
-			<Footer />
-		</div>
-	)
+    return (
+        <BrowserRouter>
+            <div className="bg-white overflow-hidden">
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/signup" element={<SignUpForm />} />
+                </Routes>
+                <Footer />
+            </div>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
