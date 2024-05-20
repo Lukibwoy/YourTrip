@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
+
 import { motion, AnimatePresence } from 'framer-motion'
 import Logo from './Logo'
 
@@ -15,26 +17,26 @@ const Navbar: React.FC = () => {
 	}
 
 	return (
-		<nav id="home" className="md:p-0 p-2 relative">
+		<nav id="/" className="md:p-0 p-2 relative">
 			{/* Desktop Navigation */}
 			<div className="hidden md:flex items-center justify-between">
 				<Logo />
 
 				<div className="md:space-x-5 lg:space-x-20 xxl:space-x-40 text-2xl mr-20 font-semibold">
-					<Link to="home" smooth={true} duration={500} className="text-black cursor-pointer">
+					<RouterLink to="/" className="text-black cursor-pointer">
 						Home
-					</Link>
-					<Link to="planner" smooth={true} duration={500} className="text-black cursor-pointer">
+					</RouterLink>
+					<ScrollLink to="planner" smooth={true} duration={500} className="text-black cursor-pointer">
 						Planner
-					</Link>
-					<Link to="pricing" smooth={true} duration={500} className="text-black cursor-pointer">
+					</ScrollLink>
+					<ScrollLink to="pricing" smooth={true} duration={500} className="text-black cursor-pointer">
 						Pricing
-					</Link>
-					<Link to="contact" smooth={true} duration={500} className="text-black cursor-pointer">
+					</ScrollLink>
+					<ScrollLink to="contact" smooth={true} duration={500} className="text-black cursor-pointer">
 						Contact
-					</Link>
+					</ScrollLink>
 					<button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
-						Sign Up
+						<RouterLink to="/signup">Sign Up</RouterLink>
 					</button>
 				</div>
 			</div>
@@ -74,38 +76,36 @@ const Navbar: React.FC = () => {
 							</motion.button>
 						</div>
 						<div className="space-y-20 font-semibold h-full flex flex-col items-center text-xl pb-36">
-							<Link
-								to="home"
-								smooth={true}
-								duration={500}
-								className="block text-black cursor-pointer"
-								onClick={closeMobileMenu}>
+							<RouterLink to="/" className="block text-black cursor-pointer" onClick={closeMobileMenu}>
 								HOME
-							</Link>
-							<Link
+							</RouterLink>
+							<ScrollLink
 								to="planner"
 								smooth={true}
 								duration={500}
 								className="block text-black cursor-pointer"
 								onClick={closeMobileMenu}>
 								PLANNER
-							</Link>
-							<Link
+							</ScrollLink>
+							<ScrollLink
 								to="pricing"
 								smooth={true}
 								duration={500}
 								className="block text-black cursor-pointer"
 								onClick={closeMobileMenu}>
 								PRICING
-							</Link>
-							<Link
+							</ScrollLink>
+							<ScrollLink
 								to="contact"
 								smooth={true}
 								duration={500}
 								className="block text-black cursor-pointer"
 								onClick={closeMobileMenu}>
 								CONTACT
-							</Link>
+							</ScrollLink>
+							<button onClick={closeMobileMenu} className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
+						<RouterLink to="/signup">Sign Up</RouterLink>
+					</button>
 						</div>
 					</motion.div>
 				)}

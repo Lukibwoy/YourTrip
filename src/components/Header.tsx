@@ -15,13 +15,13 @@ const Header: React.FC = () => {
 					</p>
 				</div>
 
-				<div className=" md:mt-0 w-1/2 md:w-2/3 h-full flex flex-row items-center justify-around md:justify-between">
+				<div className=" md:mt-0 w-3/4 md:w-2/3 h-full flex flex-row items-center justify-around md:justify-between">
 					<img
 						src={flight}
 						alt="Travel Image"
-						className="ml-6 md:ml-0 xxl:w-2/3 xxl:ml-40 w-full md:w-3/5 h-full object-cover"
+						className="md:ml-0 xxl:w-2/3 xxl:ml-40 w-2/3 md:w-3/5 h-full object-cover"
 					/>
-					<img src={tourist} alt="Travel Image" className="w-full md:w-2/3 lg:w-1/2 md:h-1/2 object-cover" />
+					<img src={tourist} alt="Travel Image" className="w-1/2 md:w-2/3 lg:w-1/2 md:h-1/2 object-cover" />
 				</div>
 			</div>
 		</header>

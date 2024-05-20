@@ -28,7 +28,7 @@ const Footer = () => {
 						</a>
 					</li>
 					<li>
-						<a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+						<a href="https://www.linkedin.com/in/%C5%82ukasz-w-083a002a4/" target="_blank" rel="noreferrer">
 							<AiFillLinkedin size={25} />
 						</a>
 					</li>
