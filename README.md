@@ -35,6 +35,7 @@ YourTrip is a web application for planing your trip. It helps you organize any t
 
 ## Screenshots
 ![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/a15e4782-0789-43e6-8f80-b80c7ca03a5e)
+![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/262fc3ee-4ef8-4856-ae33-bd9f789afe0d)
 ![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/8a2fda6c-2be6-47f3-99ce-a13d3e24f10a)
 ![obraz](https://github.com/Lukibwoy/YourTrip/assets/86016888/36548a4c-f156-4606-98bf-880f01bf8af0)
 
