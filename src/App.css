@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slide {
+	0% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(50px);
+	}
+
+	50% {
+		transform: translateX(-150px);
+	}
+	50% {
+		transform: translateX(250px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slide-mobile {
+	0% {
+		transform: translateX(0);
+	}
+
+	50% {
+		transform: translateX(60px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+.animate-slide {
+	animation: slide 4s infinite;
+}
+
+@media (max-width: 1568px) {
+	.animate-slide {
+		animation: slide-mobile 5s infinite;
+	}
+}
