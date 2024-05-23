@@ -6,16 +6,8 @@
 	0% {
 		transform: translateX(0);
 	}
-
-	25% {
-		transform: translateX(50px);
-	}
-
 	50% {
-		transform: translateX(-150px);
-	}
-	50% {
-		transform: translateX(250px);
+		transform: translateX(60px);
 	}
 	100% {
 		transform: translateX(0);
@@ -26,9 +18,8 @@
 	0% {
 		transform: translateX(0);
 	}
-
 	50% {
-		transform: translateX(60px);
+		transform: translateX(40px);
 	}
 	100% {
 		transform: translateX(0);
@@ -36,11 +27,17 @@
 }
 
 .animate-slide {
-	animation: slide 4s infinite;
+	animation: slide 3.5s infinite;
 }
 
 @media (max-width: 1568px) {
 	.animate-slide {
-		animation: slide-mobile 5s infinite;
+		animation: slide-mobile 3.5s infinite;
+	}
+}
+
+@media (max-width: 768px) {
+	.animate-slide {
+		animation: none;
 	}
 }

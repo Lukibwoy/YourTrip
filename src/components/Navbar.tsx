@@ -103,9 +103,11 @@ const Navbar: React.FC = () => {
 								onClick={closeMobileMenu}>
 								CONTACT
 							</ScrollLink>
-							<button onClick={closeMobileMenu} className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
-						<RouterLink to="/signup">Sign Up</RouterLink>
-					</button>
+							<button
+								onClick={closeMobileMenu}
+								className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
+								<RouterLink to="/signup">Sign Up</RouterLink>
+							</button>
 						</div>
 					</motion.div>
 				)}

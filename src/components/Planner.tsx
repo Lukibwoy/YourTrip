@@ -109,19 +109,19 @@ const Planner: React.FC = () => {
 				<AddDay onAddDay={handleAddDay} />
 				<div className="flex flex-col w-full md:w-2/3 mt-5 md:mt-0 bg-green-400 rounded-2xl shadow-2xl h-full">
 					<h3 className="text-2xl font-semibold text-black text-center mt-2 mb-3">Trip Summary</h3>
-					<p className="text-lg font-semibold text-black mt-3 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 ml-5">
 						Total Distance: <span className="text-white">{`${sumOfDistance(cards)} km`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-8 ml-5">
 						Sum of Expenses: <span className="text-white">{`${totalExpenses(cards)} PLN`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-8 ml-5">
 						All cities: <span className="text-white">{`${totalCities(cards)}`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 md:mt-5 ml-3	">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-8 ml-5 ">
 						Days of trip: <span className="text-white">{`${sumOfDays(cards)}`}</span>
 					</p>
-					<p className="text-lg font-semibold text-black mt-3 md:mb-6 ml-3">
+					<p className="text-lg font-semibold text-black mt-3 md:mt-8 mb-10 ml-5">
 						Average expense per day: <span className="text-white">{`${averageExpenses(cards)} PLN`}</span>
 					</p>
 				</div>
@@ -131,7 +131,7 @@ const Planner: React.FC = () => {
 				{cards.map(card => (
 					<div
 						key={card.id}
-						className="card flex justify-between flex-col w-full md:w-1/4 h-5/6 bg-green-500 rounded-2xl shadow-2xl m-0  mb-4">
+						className="card flex justify-between flex-col w-full md:w-96 xxl:w-3/12 h-5/6 bg-green-500 rounded-2xl shadow-2xl m-5  mb-4">
 						<h3 className="text-2xl font-semibold text-black text-center mt-2">Day {card.day}</h3>
 						<div className="ml-3 mt-2 md:mt-5 md:ml-5">
 							<p className="text-lg font-semibold text-black mt-5 md:mt-7">
@@ -140,7 +140,7 @@ const Planner: React.FC = () => {
 							<p className="text-lg font-semibold text-black mt-5 md:mt-7">
 								Destination: <span className="text-white">{card.destination}</span>
 							</p>
-							<p className="text-lg font-semibold text-black mt-5 md:mt-7">
+							<p className="text-lg font-semibold text-black mt-5 md:mt-7 p-1">
 								Activities: <span className="text-white break-words p-3	">{card.activities}</span>
 							</p>
 							<p className="text-lg font-semibold text-black mt-5 md:mt-7">

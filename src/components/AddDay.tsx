@@ -76,53 +76,64 @@ const AddDay: React.FC<AddDayProps> = ({ onAddDay }) => {
 		<div className="add-day-form w-full	md:w-1/4 h-full bg-green-300 rounded-2xl shadow-2xl">
 			<h3 className="text-2xl font-semibold text-black text-center mt-2 mb-3">Add Day</h3>
 			<Formik initialValues={initialValues} validate={validate} onSubmit={handleAddDay}>
-				<Form className="flex flex-col items-center">
-					<Field
-						type="text"
-						name="start"
-						placeholder="Start"
-						className="input-field mb-2 rounded-md bg-green-100 w-3/4 pl-2"
-					/>
-					<ErrorMessage name="start" component="div" className="text-red-500" />
+			<Form className="flex flex-col items-center">
+    <div className='w-5/6 h-16'>
+        <Field
+            type="text"
+            name="start"
+            placeholder="Start"
+            className="input-field mb-2 rounded-md bg-green-100 w-full pl-2"
+        />
+        <ErrorMessage name="start" component="div" className="text-red-500 -mt-2" />
+    </div>
 
-					<Field
-						type="text"
-						name="destination"
-						placeholder="Destination"
-						className="input-field mb-2 rounded-md bg-green-100 w-3/4 pl-2"
-					/>
-					<ErrorMessage name="destination" component="div" className="text-red-500" />
+    <div className='w-5/6 h-16'>
+        <Field
+            type="text"
+            name="destination"
+            placeholder="Destination"
+            className="input-field mb-2 rounded-md bg-green-100 w-full pl-2"
+        />
+        <ErrorMessage name="destination" component="div" className="text-red-500 -mt-2" />
+    </div>
 
-					<Field
-						as="textarea"
-						name="activities"
-						placeholder="Activities"
-						className="input-field mb-2 rounded-md bg-green-100 w-3/4 pl-2"
-					/>
-					<ErrorMessage name="activities" component="div" className="text-red-500" />
+    <div className='w-5/6 h-16'>
+        <Field
+            as="textarea"
+            name="activities"
+            placeholder="Activities"
+            className="input-field mb-2 rounded-md bg-green-100 h-6 w-full pl-2"
+        />
+        <ErrorMessage name="activities" component="div" className="text-red-500 -mt-3" />
+    </div>
 
-					<Field
-						type="number"
-						name="distance"
-						placeholder="Distance (km)"
-						className="input-field mb-2 rounded-md bg-green-100 w-3/4 pl-2"
-					/>
-					<ErrorMessage name="distance" component="div" className="text-red-500" />
+    <div className='w-5/6 h-16'>
+        <Field
+            type="number"
+            name="distance"
+            placeholder="Distance (km)"
+            className="input-field mb-2 rounded-md bg-green-100 w-full pl-2"
+        />
+        <ErrorMessage name="distance" component="div" className="text-red-500 -mt-2" />
+    </div>
 
-					<Field
-						type="number"
-						name="budget"
-						placeholder="Budget (PLN)"
-						className="input-field mb-2 rounded-md bg-green-100 w-3/4 pl-2"
-					/>
-					<ErrorMessage name="budget" component="div" className="text-red-500" />
+    <div className='w-5/6 h-16'>
+        <Field
+            type="number"
+            name="budget"
+            placeholder="Budget (PLN)"
+            className="input-field mb-2 rounded-md bg-green-100 w-full pl-2"
+        />
+        <ErrorMessage name="budget" component="div" className="text-red-500 -mt-2" />
+    </div>
 
-					<button
-						type="submit"
-						className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-50 mb-3 mt-3">
-						Add
-					</button>
-				</Form>
+    <button
+        type="submit"
+        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-50 mb-3 mt-3">
+        Add
+    </button>
+</Form>
+
 			</Formik>
 		</div>
 	)
