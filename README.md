@@ -1,12 +1,13 @@
 ## YourTrip
 
-YourTrip is a web application for planing your trip. It helps you organize any travel and predict cost for any day.
+YourTrip is a CRUD web application for planing your trip. It helps you organize any travel and predict cost for any day.
 
 ## Features
 
 - Trip management
 - Add data for each days.
 - Find out the distance and costs.
+- Delete cards of plan.
 - User-friendly and responsive design for mobile and desktop.
 
 ## Technologies Used
