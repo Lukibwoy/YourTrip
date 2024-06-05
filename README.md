@@ -19,6 +19,7 @@ YourTrip is a CRUD web application for planing your trip. It helps you organize 
 - TailwindCss
 - React Hook Form
 - Axios
+- Formik
 - json-server
 
 
