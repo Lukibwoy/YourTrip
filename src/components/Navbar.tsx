@@ -35,8 +35,9 @@ const Navbar: React.FC = () => {
 					<ScrollLink to="contact" smooth={true} duration={500} className="text-black cursor-pointer">
 						Contact
 					</ScrollLink>
-					<button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50">
-						<RouterLink to="/signup">Sign Up</RouterLink>
+					<button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-2 rounded 
+					focus:outline-none focus:shadow-outline md:ml-20 lg:ml-50 cursor-pointer hover:scale-105 transition-transform ease-in">
+						<RouterLink to="/signup" className=''>Sign Up</RouterLink>
 					</button>
 				</div>
 			</div>

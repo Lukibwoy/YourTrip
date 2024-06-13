@@ -9,10 +9,10 @@ const PopularPlaces: React.FC = () => {
 			<div className="PlacesTypes flex flex-col md:flex-row justify-between w-full">
 				<h2 className="text-2xl font-semibold text-black text-center md:text-4xl">Popular Place</h2>
 				<div className="hidden mt-3 mb-5 md:mb-0 font-semibold text-lg lg:flex flex-wrap items-center justify-center">
-					<button className="px-8">Beach</button>
-					<button className="px-8">Mountain</button>
-					<button className="px-8">Waterfall</button>
-					<button className="px-8">Icebergs</button>
+					<button className="px-8 hover:scale-110 transition ease-in">Beach</button>
+					<button className="px-8 hover:scale-110 transition ease-in">Mountain</button>
+					<button className="px-8 hover:scale-110 transition ease-in">Waterfall</button>
+					<button className="px-8 hover:scale-110 transition ease-in">Icebergs</button>
 				</div>
 			</div>
 			<div className="PlacesOffer flex flex-col md:flex-row justify-between w-full md:w-4/4 mt-5">

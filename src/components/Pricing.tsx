@@ -53,11 +53,12 @@ const Pricing: React.FC = () => {
 				/>
 			</div>
 
-			<div className="flex mt-8 w-full h-1/2 flex-col md:flex-row  flex-wrap:no-wrap items-stretch justify-center">
+			<div className="flex mt-8 w-full h-1/2 flex-col md:flex-row  flex-wrap:no-wrap items-stretch justify-center ">
 				{plans.map((plan, index) => (
 					<div
 						key={index}
-						className="bg-gradient-to-t from-white to-gray -100 rounded-xl p-5 lg:p-6 shadow-xl text-center w-5/6 m-5 items-center border-red-900 flex justify-center flex-col">
+						className="bg-gradient-to-t from-white to-gray -100 rounded-xl p-5 lg:p-6 shadow-xl text-center w-5/6 m-5 items-center
+						 border-red-900 flex justify-center flex-col hover:scale-105 transition ease-in">
 						<h3 className="text-xl font-bold mb-2">{plan.type}</h3>
 						<p className="text-gray-600 text-xl">{plan.price}</p>
 						<p className="text-black mt-3  text-lg">{plan.consultation}</p>
@@ -65,7 +66,9 @@ const Pricing: React.FC = () => {
 						<p className="text-black mt-3 font-semibold text-lg">{plan.restaurants}</p>
 						<p className="text-black mt-3 font-semibold text-lg">{plan.events}</p>
 						<div className="mt-auto">
-							<button className=" mt-10 mb-3 bg-yellow-400 w-full text-lg font-bold text-white px-4 py-2 rounded-md hover:scale-105 transition ease-in-out">
+							<button
+								className="mt-10 mb-3 bg-yellow-400 w-full text-lg font-bold text-white px-4 py-2 rounded-md hover:bg-white
+							 hover:text-yellow-400 hover:border-yellow-400 border border-transparent">
 								Select Plan
 							</button>
 						</div>
